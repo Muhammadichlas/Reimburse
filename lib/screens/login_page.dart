@@ -26,7 +26,7 @@ class LoginPage extends StatelessWidget {
         ),
       ),
     );
-  }
+  } 
 
   Widget _iconLogin() {
     return Image.asset(
@@ -127,6 +127,13 @@ class LoginPage extends StatelessWidget {
           padding: EdgeInsets.only(top: 16.0),
         ),
         InkWell(
+          onTap:(){
+            Navigator.push(
+             context,
+             MaterialPageRoute(
+               builder:(context) => Employee()),
+            );
+          },
           child: Container(
             padding: EdgeInsets.symmetric(vertical: 8.0),
             width: double.infinity,
@@ -146,15 +153,15 @@ class LoginPage extends StatelessWidget {
           padding: EdgeInsets.only(top: 16.0),
         ),
         Text(
-          'or',
+          '',
           style: TextStyle(
             color: Colors.white,
-            fontSize: 12.0,
+            fontSize: 15.0,
           ),
         ),
         FlatButton(
           child: Text(
-            'Register',
+            '',
             style: TextStyle(color: Colors.white),
           ),
           onPressed: () {
@@ -165,3 +172,4 @@ class LoginPage extends StatelessWidget {
     );
   }
 }
+

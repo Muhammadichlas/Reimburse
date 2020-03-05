@@ -3,6 +3,7 @@ import 'dart:async';
 
 import 'package:manajemen_keuangan/screens/login_page.dart';
 
+
 void main() {
   runApp(MaterialApp(
     debugShowCheckedModeBanner: false,
@@ -32,7 +33,7 @@ class _SplashScreen extends State<SplashScreen> {
   }
 
   startSplashScreen() async {
-    var duration = const Duration(seconds: 4);
+    var duration = const Duration(seconds: 2);
     return Timer(duration, () {
       Navigator.of(context).pushReplacement(
         MaterialPageRoute(builder: (_) {
@@ -45,7 +46,7 @@ class _SplashScreen extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Color(0xFFFFFFFF),
+        backgroundColor: Color(0xFF00ACC1),
         body: Center(
           child: Container(
             child: Image.asset('assets/roketin.png'),
@@ -53,5 +54,5 @@ class _SplashScreen extends State<SplashScreen> {
             width: 275,
           ),
         ));
-  }
+  }  
 }

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:manajemen_keuangan/providers/employee_providers.dart';
 import 'package:provider/provider.dart';
 
+import './employee_add.dart';
 import '../models/employee_model.dart';
 import '../providers/employee_providers.dart';
 
@@ -27,7 +27,7 @@ class Employee extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('DW Employee CRUD'),
+        title: Text('Reinbusment'),
       ),
       floatingActionButton: FloatingActionButton(
         backgroundColor: Colors.pink,
@@ -61,7 +61,7 @@ class Employee extends StatelessWidget {
                         onTap: () {
                           Navigator.of(context).push(
                             MaterialPageRoute(
-                              builder: (context) => EmployeeEdit(
+                              builder: (context) => employeedit(
                                 id: data.dataEmployee[i].id,
                               ),
                             ),
@@ -126,6 +126,4 @@ class Employee extends StatelessWidget {
   }
 }
 
-EmployeeEdit({String id}) {}
-
-class EmployeeAdd {}
+employeedit({String id}) {}
