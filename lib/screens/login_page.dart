@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:manajemen_keuangan/constant.dart';
 import 'package:manajemen_keuangan/screens/register_page.dart';
-import 'package:manajemen_keuangan/pages/employee.dart';
+import 'package:manajemen_keuangan/dashboard/home_page.dart';
 
 class LoginPage extends StatelessWidget {
   @override
@@ -131,7 +131,7 @@ class LoginPage extends StatelessWidget {
             Navigator.push(
              context,
              MaterialPageRoute(
-               builder:(context) => Employee()),
+               builder:(context) => HomePage()),
             );
           },
           child: Container(
