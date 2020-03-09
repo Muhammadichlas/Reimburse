@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:manajemen_keuangan/dashboard/expense.dart';
-
+import 'package:manajemen_keuangan/dashboard/history.dart';
 import 'package:manajemen_keuangan/dashboard/home_page.dart';
 
 class Dashboard extends StatefulWidget {
@@ -14,7 +13,7 @@ class _DashboardState extends State<Dashboard> {
   int _selectedIndex = 0;
   final _layoutPage = [
     HomePage(),
-    Expense(),
+    History(),
 
   ];
 
