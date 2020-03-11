@@ -59,6 +59,7 @@ flutter:
     - assets/images/user.png
     - assets/images/avatar.png
     - assets/images/icon_uang.png
+    - assets/images/dot.png
 
   #  - images/a_dot_burr.jpeg
   #  - images/a_dot_ham.jpeg

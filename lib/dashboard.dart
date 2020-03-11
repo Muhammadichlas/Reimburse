@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:manajemen_keuangan/dashboard/history.dart';
 import 'package:manajemen_keuangan/dashboard/home_page.dart';
+import 'package:manajemen_keuangan/pages/account_page.dart';
 
 class Dashboard extends StatefulWidget {
   static var tag;
@@ -14,7 +15,7 @@ class _DashboardState extends State<Dashboard> {
   final _layoutPage = [
     HomePage(),
     History(),
-
+    AccountPage(),
   ];
 
   void _onTabItem(int index) {
@@ -35,7 +36,8 @@ class _DashboardState extends State<Dashboard> {
               height: 25.0,
             ),
             activeIcon: Image.asset(
-              'assets/images/home.png', color: Colors.orange,
+              'assets/images/home.png',
+              color: Colors.orange,
               height: 25.0,
             ),
             title: Text('Home'),
@@ -47,7 +49,8 @@ class _DashboardState extends State<Dashboard> {
               height: 25.0,
             ),
             activeIcon: Image.asset(
-              'assets/images/history.png', color: Colors.orange,
+              'assets/images/history.png',
+              color: Colors.orange,
               height: 25.0,
             ),
             title: Text('History'),
@@ -58,7 +61,8 @@ class _DashboardState extends State<Dashboard> {
               height: 25.0,
             ),
             activeIcon: Image.asset(
-              'assets/images/user.png', color: Colors.orange,
+              'assets/images/user.png',
+              color: Colors.orange,
               height: 25.0,
             ),
             title: Text('Akun'),

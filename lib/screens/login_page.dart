@@ -26,7 +26,7 @@ class LoginPage extends StatelessWidget {
         ),
       ),
     );
-  } 
+  }
 
   Widget _iconLogin() {
     return Image.asset(
@@ -43,20 +43,20 @@ class LoginPage extends StatelessWidget {
           padding: EdgeInsets.only(top: 16.0),
         ),
         Text(
-          "Login into app",
+          "Selamat Datang Di Reimburse App",
           style: TextStyle(
-            color: Colors.white,
-            fontSize: 16.0,
+            color: Colors.lightBlue,
+            fontSize: 20.0,
           ),
         ),
         Padding(
           padding: EdgeInsets.only(top: 12.0),
         ),
         Text(
-          "Selamat Datang Di Roketin App",
+          "Login Into app",
           style: TextStyle(
-            fontSize: 20.0,
-            color: Colors.white30,
+            fontSize: 16.0,
+            color: Colors.white70,
           ),
           textAlign: TextAlign.center,
         ),
@@ -127,11 +127,10 @@ class LoginPage extends StatelessWidget {
           padding: EdgeInsets.only(top: 16.0),
         ),
         InkWell(
-          onTap:(){
+          onTap: () {
             Navigator.push(
-             context,
-             MaterialPageRoute(
-               builder:(context) => Dashboard()),
+              context,
+              MaterialPageRoute(builder: (context) => Dashboard()),
             );
           },
           child: Container(
@@ -146,7 +145,6 @@ class LoginPage extends StatelessWidget {
               color: Colors.white,
               borderRadius: BorderRadius.circular(30.0),
             ),
-             
           ),
         ),
         Padding(
@@ -172,4 +170,3 @@ class LoginPage extends StatelessWidget {
     );
   }
 }
-

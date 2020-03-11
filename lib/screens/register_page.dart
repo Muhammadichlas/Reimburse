@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:manajemen_keuangan/constant.dart';
 
 class RegisterPage extends StatelessWidget {
-
   static const routeName = "/registerPage";
 
   @override
@@ -31,10 +30,10 @@ class RegisterPage extends StatelessWidget {
 
   Widget _iconRegister() {
     return Image.asset(
-              "assets/images/icon_register.png",
-              width: 150.0,
-              height: 150.0,
-            );
+      "assets/images/icon_register.png",
+      width: 150.0,
+      height: 150.0,
+    );
   }
 
   Widget _titleDescription() {
@@ -76,7 +75,7 @@ class RegisterPage extends StatelessWidget {
             border: UnderlineInputBorder(),
             enabledBorder: UnderlineInputBorder(
               borderSide: BorderSide(
-                color: ColorPalette.underlineTextField, 
+                color: ColorPalette.underlineTextField,
                 width: 1.5,
               ),
             ),
@@ -100,7 +99,7 @@ class RegisterPage extends StatelessWidget {
             border: UnderlineInputBorder(),
             enabledBorder: UnderlineInputBorder(
               borderSide: BorderSide(
-                color: ColorPalette.underlineTextField, 
+                color: ColorPalette.underlineTextField,
                 width: 1.5,
               ),
             ),
@@ -125,7 +124,7 @@ class RegisterPage extends StatelessWidget {
             border: UnderlineInputBorder(),
             enabledBorder: UnderlineInputBorder(
               borderSide: BorderSide(
-                color: ColorPalette.underlineTextField, 
+                color: ColorPalette.underlineTextField,
                 width: 1.5,
               ),
             ),

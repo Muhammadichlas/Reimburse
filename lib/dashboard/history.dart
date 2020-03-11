@@ -98,7 +98,7 @@ class _HistoryState extends State<History> {
                     Container(
                       alignment: Alignment.center,
                       child: Text(
-                        'Aktivitas',
+                        'Transaksi Terakhir',
                         textAlign: TextAlign.center,
                         style: text16bold,
                       ),
@@ -109,7 +109,7 @@ class _HistoryState extends State<History> {
                 Container(
                   child: ListView.builder(
                       physics: NeverScrollableScrollPhysics(),
-                      itemCount: 20,
+                      itemCount: 25,
                       shrinkWrap: true,
                       itemBuilder: (BuildContext context, int index) =>
                           listItem()),
@@ -126,7 +126,7 @@ class _HistoryState extends State<History> {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.start,
           children: <Widget>[
-            Image.asset('assets/images/dot.png', height: 16.0),
+            Image.asset('assets/images/dot.png', height: 10.0),
             SizedBox(width: 16.0),
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
