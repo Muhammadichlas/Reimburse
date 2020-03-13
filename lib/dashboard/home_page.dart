@@ -68,10 +68,10 @@ class _HomePage extends State<HomePage> {
                             child: Column(
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: <Widget>[
-                                Text("Total Uang",
+                                Text("",
                                     textAlign: TextAlign.left,
                                     style: TextStyle(color: Color(0xFFFFFFFF))),
-                                Text('Rp.100.000.000',
+                                Text('',
                                     style: TextStyle(color: Color(0xFFFFFFFF))),
                               ],
                             ),

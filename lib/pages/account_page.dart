@@ -162,21 +162,21 @@ class _AccountPageState extends State<AccountPage> {
                 SizedBox(
                   height: 50.0,
                 ),
-                Material(
-                  elevation: 2.0,
-                  borderRadius: BorderRadius.circular(15.0),
-                  color: Color(0xffFF3030),
-                  child: MaterialButton(
-                    minWidth: MediaQuery.of(context).size.width,
-                    padding: EdgeInsets.fromLTRB(20.0, 15.0, 20.0, 15.0),
-                    onPressed: () {
-                    Text(
-                      'Log Out',
-                      textAlign: TextAlign.center,
-                      style: textwhiteStyle,
-                    );
-                    }),
-                ),
+                // Material(
+                //   elevation: 2.0,
+                //   borderRadius: BorderRadius.circular(15.0),
+                //   color: Color(0xffFF3030),
+                //   child: MaterialButton(
+                //     minWidth: MediaQuery.of(context).size.width,
+                //     padding: EdgeInsets.fromLTRB(20.0, 15.0, 20.0, 15.0),
+                //     onPressed: () {
+                //     Text(
+                //       'Log Out',
+                //       textAlign: TextAlign.center,
+                //       style: textwhiteStyle,
+                //     );
+                //     }),
+                // ),
                 SizedBox(
                   height: 32.0,
                 )
