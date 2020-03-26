@@ -72,7 +72,9 @@ class _ExpenseState extends State<Expense> {
                   ),
                   TextFormField(
                     decoration: const InputDecoration(
-                        border: UnderlineInputBorder(),
+                        border: UnderlineInputBorder(borderSide: BorderSide(
+                          color: Color(0xFFFFFFFF)
+                        )),
                         labelText: 'Date',
                         icon: const Padding(
                           padding: const EdgeInsets.only(top: 15.0),
@@ -121,7 +123,7 @@ class _ExpenseState extends State<Expense> {
                         labelText: 'Quantity',
                         icon: const Padding(
                           padding: const EdgeInsets.only(top: 15.0),
-                          child: const Icon(Icons.feedback),
+                          child: const Icon(Icons.subject),
                         )),
                   ),
                   TextFormField(
@@ -138,7 +140,7 @@ class _ExpenseState extends State<Expense> {
                   new Container(
                     alignment: Alignment.centerLeft,
                     height: 40.00,
-                    width: 159.00,
+                    width: 140.00,
                     decoration: BoxDecoration(
                       color: Color(0xFF01579B),
                       border: Border.all(

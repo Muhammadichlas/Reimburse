@@ -61,63 +61,92 @@ class _HistoryState extends State<History> {
         backgroundColor: Color(0xffFFFFFF),
         body: SingleChildScrollView(
             child: SafeArea(
-          top: true,
-          bottom: true,
-          left: true,
-          right: true,
-          minimum: const EdgeInsets.only(
-            left: 16.0,
-            right: 16.0,
-          ),
-          child: SafeArea(
-            child: Column(
-              mainAxisSize: MainAxisSize.min,
-              children: <Widget>[
-                SizedBox(
-                  height: 32.0,
+                top: true,
+                bottom: true,
+                left: true,
+                right: true,
+                minimum: const EdgeInsets.only(
+                  left: 16.0,
+                  right: 16.0,
                 ),
-                Stack(
-                  children: <Widget>[
-                    GestureDetector(
-                      onTap: () {
-                        Navigator.pushAndRemoveUntil(
-                          context,
-                          MaterialPageRoute(
-                              builder: (BuildContext context) => Dashboard()),
-                          ModalRoute.withName('/'),
-                        );
-                      },
-                      child: Container(
-                        alignment: Alignment.centerLeft,
-                        child: Icon(
-                          Icons.keyboard_backspace,
-                          color: Colors.black,
-                        ),
+                child: SafeArea(
+                    child: Column(
+                        mainAxisSize: MainAxisSize.min,
+                        children: <Widget>[
+                      SizedBox(
+                        height: 32.0,
                       ),
-                    ),
-                    Container(
-                      alignment: Alignment.center,
-                      child: Text(
-                        'Transaksi Terakhir',
-                        textAlign: TextAlign.center,
-                        style: text16bold,
+                      Stack(
+                        children: <Widget>[
+                          GestureDetector(
+                            onTap: () {
+                              Navigator.pushAndRemoveUntil(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (BuildContext context) =>
+                                        Dashboard()),
+                                ModalRoute.withName('/'),
+                              );
+                            },
+                            child: Container(
+                              alignment: Alignment.centerLeft,
+                              child: Icon(
+                                Icons.keyboard_backspace,
+                                color: Colors.black,
+                              ),
+                            ),
+                          ),
+                          Container(
+                            alignment: Alignment.center,
+                            child: Text(
+                              'Transaksi Terakhir',
+                              textAlign: TextAlign.center,
+                              style: text16bold,
+                            ),
+                          ),
+                          SizedBox(
+                            height: 32.0,
+                          ),
+                        ],
                       ),
-                    )
-                  ],
-                ),
-                SizedBox(height: 32.0),
-                Container(
-                  child: ListView.builder(
-                      physics: NeverScrollableScrollPhysics(),
-                      itemCount: 25,
-                      shrinkWrap: true,
-                      itemBuilder: (BuildContext context, int index) =>
-                          listItem()),
-                )
-              ],
-            ),
-          ),
-        )));
+                      Text('Tahun 2020'),
+                      Container(
+                          alignment: Alignment.centerRight,
+                          child: DropdownButton<String>(
+                            hint: Text(
+                              'Bulan',
+                              style: text14bold,
+                            ),
+                            items: <String>[
+                              'Januari',
+                              'Februari',
+                              'Maret ',
+                              'April',
+                              'Mei',
+                              'Juni',
+                              'Juli',
+                              'Agustus',
+                              'September',
+                              'Oktober',
+                              'November',
+                              'Desember'
+                            ].map((String value) {
+                              return new DropdownMenuItem<String>(
+                                value: value,
+                                child: new Text(value),
+                              );
+                            }).toList(),
+                            onChanged: (_) {},
+                          )),
+                      Container(
+                        child: ListView.builder(
+                            physics: NeverScrollableScrollPhysics(),
+                            itemCount: 30,
+                            shrinkWrap: true,
+                            itemBuilder: (BuildContext context, int index) =>
+                                listItem()),
+                      )
+                    ])))));
   }
 
   Container listItem() {
@@ -133,10 +162,10 @@ class _HistoryState extends State<History> {
               children: <Widget>[
                 Text(
                   'Pembelian Tiket Pesawat',
-                  style: text14bold,
+                  style: text16bold,
                 ),
                 SizedBox(height: 2.0),
-                Text('13 Feb 2020 - 15 Feb 2020, Direview', style: text14),
+                Text('13 Feb 2020 - 15 Feb 2020', style: text14),
               ],
             ),
           ],

@@ -141,16 +141,60 @@ class _HomePage extends State<HomePage> {
                               ),
                             ),
                             SizedBox(
-                              height: 15.0,
+                              height: 20.0,
                             ),
-                            new Container(
-                              alignment: Alignment(-1.0, 0.0),
-                              height: 31.00,
-                              width: 103.00,
-                              decoration: BoxDecoration(
-                                color: Color(0xffe3e3e3),
-                                borderRadius: BorderRadius.circular(15.00),
-                              ),
+                            Row(
+                              children: <Widget>[
+                                new Container(
+                                  height: 1.00,
+                                  width: 1.00,
+                                  child: Align(alignment: Alignment.centerLeft),
+                                  decoration: BoxDecoration(
+                                    color: Color(0xffe3e3e3),
+                                    borderRadius: BorderRadius.circular(15.00),
+                                  ),
+                                ),
+                                SizedBox(
+                                  width: 25.0,
+                                ),
+                                new Container(
+                                  child:
+                                      Text('All', textAlign: TextAlign.center),
+                                  height: 31.00,
+                                  width: 70.00,
+                                  decoration: BoxDecoration(
+                                    color: Color(0xffe3e3e3),
+                                    borderRadius: BorderRadius.circular(15.00),
+                                  ),
+                                  
+                                ),
+                                SizedBox(
+                                  width: 25.0,
+                                ),
+                                new Container(
+                                  child: Text('Received',
+                                      textAlign: TextAlign.center),
+                                  height: 31.00,
+                                  width: 103.00,
+                                  decoration: BoxDecoration(
+                                    color: Color(0xffe3e3e3),
+                                    borderRadius: BorderRadius.circular(15.00),
+                                  ),
+                                ),
+                                SizedBox(
+                                  width: 25.0,
+                                ),
+                                new Container(
+                                  child: Text('Expense',
+                                      textAlign: TextAlign.center),
+                                  height: 31.00,
+                                  width: 109.00,
+                                  decoration: BoxDecoration(
+                                    color: Color(0xffe3e3e3),
+                                    borderRadius: BorderRadius.circular(15.00),
+                                  ),
+                                ),
+                              ],
                             ),
                             SizedBox(
                               height: 25.0,
@@ -182,7 +226,7 @@ class _HomePage extends State<HomePage> {
                             SizedBox(
                               height: 10.0,
                             ),
-                            Container(
+                            Container(  
                               height: 400.0,
                               child: ListView(
                                 physics: const NeverScrollableScrollPhysics(),

@@ -104,7 +104,7 @@ class _AccountPageState extends State<AccountPage> {
                       height: 8.0,
                     ),
                     Text(
-                      'User',
+                      'Muhammad Ichlas',
                       style: text16bold,
                       textAlign: TextAlign.center,
                     ),
